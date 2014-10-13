@@ -4,8 +4,10 @@ PYTHON=$(ENVBIN)/python
 
 all: env
 
+# target: help - Display callable targets
 help:
-	@egrep "^# target:" [Mm]akefile
+	echo "Callable targets:"
+	@egrep "^# target:" [Mm]akefile | sed 's/# target: //'
 
 env: requirements.txt $(ENVBIN)
 	$(PIP) install -M -r requirements.txt
@@ -14,6 +16,7 @@ env: requirements.txt $(ENVBIN)
 $(ENVBIN):
 	virtualenv --no-site-packages env
 
+# target: run - Run application server
 .PHONY: run
 run: env/ test.py
 	$(PYTHON) test.py
