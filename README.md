@@ -9,12 +9,20 @@ Sample project that shows how to create a simple RESTful backend using Flask.
 
 ## Installation
 
-1. git clone https://github.com/xperienced/flask-rest-boilerplate.git
-1. flask-rest-boilerplate
-1. `make run`
+    $ git clone https://github.com/xperienced/flask-rest-boilerplate.git
+    $ cd flask-rest-boilerplate
+    $ make run
 
 ## Usage
 
-1. Run server: `make run`
-1. Test it: `curl http://127.0.0.1:5000/api/person`
-1. Display callable targets: `make help`
+Run server: 
+
+    $ make run
+    
+Test it:
+
+    $ curl http://127.0.0.1:5000/api/person
+
+Display callable targets:
+
+    $ make help
