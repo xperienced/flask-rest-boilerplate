@@ -18,5 +18,5 @@ $(ENVBIN):
 
 # target: run - Run application server
 .PHONY: run
-run: env/ test.py
-	$(PYTHON) test.py
+run: env/ run.py
+	$(PYTHON) run.py

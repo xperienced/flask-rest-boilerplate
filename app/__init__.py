@@ -42,6 +42,3 @@ manager = flask.ext.restless.APIManager(app, flask_sqlalchemy_db=db)
 # default. Allowed HTTP methods can be specified as well.
 manager.create_api(Person, methods=['GET', 'POST', 'DELETE'])
 manager.create_api(Computer, methods=['GET'])
-
-# start the flask loop
-app.run()
