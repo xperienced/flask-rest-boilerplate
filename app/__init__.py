@@ -8,3 +8,5 @@ app.config['DEBUG'] = True
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////tmp/test.db'
 
 db = flask.ext.sqlalchemy.SQLAlchemy(app)
+
+import endpoints
